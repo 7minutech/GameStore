@@ -1,1 +1,17 @@
 GET http://localhost:5066/games HTTP/1.1
+
+###
+
+GET http://localhost:5066/games/1 HTTP/1.1
+
+###
+
+POST http://localhost:5066/games HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "tropico",
+    "genre": "city-sim",
+    "price": 21.00,
+    "releaseDate": "2003-05-03"
+}
